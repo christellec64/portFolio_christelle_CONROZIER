@@ -1,26 +1,26 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    overscroll-behavior-y: contain;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    user-select: none;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-      segoe ui, arial, sans-serif;
-    position: fixed;
-    overflow: hidden;
-  }
-  
-  #root {
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    cursor: url('https://img.icons8.com/ultraviolet/40/000000/0-percents.png') 39 39,
-      auto;
-  }
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  position: fixed;
+  overflow: hidden;
+  background-color: #343a40;
+}
+
+#root {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #343a40;
+}

@@ -1,35 +1,37 @@
 import React, { useState } from "react";
-import "./Home.css";
 import {
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
   CarouselCaption,
+  Badge,
 } from "reactstrap";
+import "./Projects.css";
+import hackaton from "./Img/Hackaton_29_03.jpg";
 
 const items = [
   {
-    src:
-      "https://assets.pokemon.com/assets//cms2-fr-fr/img/misc/_tiles/generic/pokemon-169.jpg",
-    altText: "Hackaton",
-    caption: "Hackaton_Voyage Depuis ton Canappé",
+    id: 1,
+    altText: "Hackaton du 29_03_2020",
+    caption: "Hackaton 29_03_2020",
+    src: hackaton,
   },
   {
-    src:
-      "https://img.gaming.gentside.com/s3/frgsg/1024/pokemon/default_2020-02-26_0f506adc-13c9-4895-8046-1a0eebf5538b.jpeg",
+    id: 2,
     altText: "Slide 2",
     caption: "Slide 2",
+    src: "",
   },
   {
-    src:
-      "https://static.cnews.fr/sites/default/files/styles/image_640_360/public/pokemon-tower-battle_facebook_gaming_5e02314e61225.jpg?itok=AybZrkv5",
+    id: 3,
     altText: "Slide 3",
     caption: "Slide 3",
+    src: "",
   },
 ];
 
-const Projects = (props) => {
+function Projects(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -53,12 +55,22 @@ const Projects = (props) => {
   const slides = items.map((item) => {
     return (
       <CarouselItem
+        className="mainCarousel"
+        tag="div"
+        key={item.id}
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
-        key={item.src}
       >
-        <img src={item.src} alt={item.altText} width="100%" height="auto" />
+        <Badge href="https://hackaton1-29-03-2020.netlify.app/" color="bg-dark">
+          <img
+            src={item.src}
+            alt={item.altText}
+            width="1200px"
+            height="600px"
+          />
+        </Badge>
         <CarouselCaption
+          className="text-info"
           captionText={item.caption}
           captionHeader={item.caption}
         />
@@ -67,30 +79,29 @@ const Projects = (props) => {
   });
 
   return (
-    <Carousel
-      interval={3000}
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+    <div className="custom-tag">
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          className="custom-indicators"
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          className="custom-indicators"
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </div>
   );
-};
+}
 
 export default Projects;
