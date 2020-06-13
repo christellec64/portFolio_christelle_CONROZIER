@@ -12,65 +12,88 @@ import {
   CardLink,
 } from "reactstrap";
 
+import mePic from "./Img/moi_carre.png";
+import fb from "./Img/fb_icon_325x325.png";
+import github from "./Img/1200px-Octicons-mark-github.svg.png";
+import linkedin from "./Img/Logo-LinkedIn.png";
+
 function AboutMe(props) {
   return (
     <>
-      <h1>About Me</h1>
       <Row>
-        <Col sm="2" />
-        <Col sm="8">
-          <Card>
-            <CardBody>
-              <CardTitle>Christelle CONROZIER</CardTitle>
-              <CardSubtitle>
-                Développeur Web & Mobile dans le secteur touristique
-              </CardSubtitle>
-            </CardBody>
-            <img width="100%" src="/assets/318x180.svg" alt="Christelle CONROZIER" />
-            <CardBody>
-              <CardText>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-                dolorem sint enim nemo odit nam dicta, totam, sunt, magni
-                consequatur mollitia corporis harum delectus quaerat incidunt
-                quos! Aperiam, sint repudiandae.
-              </CardText>
-              <CardLink
-                href="https://www.linkedin.com/in/christelle-conrozier/"
-                target="_blank"
-              >
-                <img
-                  width="5vw"
-                  height="5vh"
-                  src=""
-                  alt="https://www.facebook.com/Christelleconrozier"
+        <h1>A Propos</h1>{" "}
+      </Row>
+      <Row>
+        <Col sm="3" />
+        <Col sm="6">
+          <Card className="card mx-auto">
+            <div className="cardImageProfil">
+              <img width="90%" src={mePic} alt="Christelle CONROZIER" />
+            </div>
+            <div className="cardBody">
+              <CardBody>
+                <CardTitle>Christelle CONROZIER</CardTitle>
+                <CardSubtitle>
+                  Développeur Web & Mobile dans le secteur touristique
+                </CardSubtitle>
+              </CardBody>
+              <CardBody>
+                <CardText>
+                  Actuellement en formation de développeur Web & Mobile à la
+                  Wild Code School et titulaire d’un BTS Tourisme, je suis à la
+                  recherche d’un stage en communication digitale dans le secteur
+                  touristique ou en agence de communication. <br />
+                  <br />
+                  Tout au long de mes expériences, j’ai pu développer des
+                  compétences dont le sens du contact, l’autonomie,
+                  l’organisation, la gestion de projet et le développement web.
+                </CardText>
+                <div className="mail">
+                  <a href="mailto:christelle.conrozier@orange.fr">
+                    christelle.conrozier@orange.fr
+                  </a>
+                </div>
+                <CardLink
+                  href="https://www.linkedin.com/in/christelle-conrozier/"
                   target="_blank"
-                />
-              </CardLink>
-              <CardLink href="https://github.com/christellec64" target="_blank">
-                <img
-                  width="5vw"
-                  height="5vh"
-                  src=""
-                  alt="https://github.com/christellec64"
+                >
+                  <img
+                    width="30vw"
+                    height="30vh"
+                    src={linkedin}
+                    alt="https://www.linkedin.com/in/christelle-conrozier/"
+                    target="_blank"
+                  />
+                </CardLink>
+                <CardLink
+                  href="https://github.com/christellec64"
                   target="_blank"
-                />
-              </CardLink>
-              <CardLink
-                href="https://www.facebook.com/Christelleconrozier"
-                target="_blank"
-              >
-                <img
-                  width="5vw"
-                  height="5vh"
-                  src=""
-                  alt="https://www.facebook.com/Christelleconrozier"
+                >
+                  <img
+                    width="30vw"
+                    height="30vh"
+                    src={github}
+                    alt="https://github.com/christellec64"
+                    target="_blank"
+                  />
+                </CardLink>
+                <CardLink
+                  href="https://www.facebook.com/Christelleconrozier"
                   target="_blank"
-                />
-              </CardLink>
-            </CardBody>
+                >
+                  <img
+                    width="30vw"
+                    height="30vh"
+                    src={fb}
+                    alt="https://www.facebook.com/Christelleconrozier"
+                    target="_blank"
+                  />
+                </CardLink>
+              </CardBody>
+            </div>
           </Card>
         </Col>
-        <Col sm="2" />
+        <Col sm="3" />
       </Row>
     </>
   );

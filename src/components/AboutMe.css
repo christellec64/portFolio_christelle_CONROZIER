@@ -1,3 +1,68 @@
 h1 {
-    font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  color: white !important;
+  margin-left: 4vw !important;
+  font-size: 2vw !important;
+}
+.card {
+  border: 0.2vw solid #bf838f !important;
+  border-radius: 5% 10% !important;
+  width: 95%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row !important;
+  margin-top: 7vh;
+}
+.cardImageProfil {
+  margin-top: 1.5vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  width: 33%;
+}
+.cardImageProfil img {
+    background-color: white;
+    border: 0.3vw solid transparent;
+    border-top-color: #bf838f;
+    border-bottom-color: #bf838f;
+    border-radius: 50%;
+}
+.cardBody {
+  width: 67%;
+  margin-right: 1vw;
+  margin-top: 0.7vw;
+}
+.card-title {
+  font-size: 1.5vw;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: bold;
+  color: #bf838f;
+  padding: 0 !important;
+}
+.card-subtitle {
+  padding: 0 !important;
+  font-style: italic;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1vw;
+}
+.card-body {
+  padding: 0.5vw !important;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 0.9vw;
+  text-align: justify;
+}
+.mail {
+  margin-bottom: 1vw;
+}
+.mail a {
+  font-size: 0.9vw;
+  margin-left: 13vw;
+  color: black !important;
+}
+.mail a:hover {
+  color: #bf838f !important;
+}
+.card-link {
+  margin-left: 17vw;
+  margin-top: 1vw;
 }

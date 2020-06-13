@@ -8,39 +8,36 @@ import {
   Badge,
 } from "reactstrap";
 import "./Projects.css";
-import computer from "./Img/Computer.png";
-import mobile from "./Img/mobilePhone.png";
 
 const items = [
   {
     id: 1,
-    altText: "Hackaton du 29_03_2020",
-    caption: "Hackaton 29_03_2020",
-    src: computer,
-    text: "Hackaton sur le theme: Voyage depuis ton capané ",
-    srcUrl: "https://hackaton1-29-03-2020.netlify.app/",
-    width: "85%",
-    height: "90%",
+    altText: "Projet 1 wcs: WildBook",
+    caption: "Projet 1 : WildBook",
+    text:
+      "Projet 1 : Création d'un WildBook de la promotion WildCodeSchool de Mars 2020 ",
+    srcUrl: "https://wildbook-p1-wcs.netlify.app/",
   },
   {
     id: 2,
-    altText: "Projet 2 : Virus Clicker",
-    caption: "Projet 2 : Virus Clicker",
-    src: mobile,
-    text: "",
-    srcUrl: "https://virus-clicker-p2-wcs.netlify.app/",
-    width: "25%",
-    height: "100%",
+    altText: "Hackaton du 29_03_2020",
+    caption: "Hackaton 29_03_2020",
+    text: "Theme : Voyage depuis ton capané ",
+    srcUrl: "https://hackaton1-29-03-2020.netlify.app/",
   },
   {
     id: 3,
-    altText: "Slide 3",
-    caption: "Slide 3",
-    src: computer,
-    text: "",
-    srcUrl: "https://wildbook-p1-wcs.netlify.app/",
-    width: "85%",
-    height: "90%",
+    altText: "Projet 2 wcs : Virus Clicker",
+    caption: "Projet 2 : Virus Clicker",
+    text: "Projet 2: Créer le jeu Virus Clicker en version multijoueur",
+    srcUrl: "https://virus-clicker-p2-wcs.netlify.app/",
+  },
+  {
+    id: 4,
+    altText: "Mon CV version SiteWeb",
+    caption: "Mon CV version SiteWeb",
+    text: "Projet personnel : mon CV version SiteWeb",
+    srcUrl: "https://christelle-conrozier-cv.netlify.app/",
   },
 ];
 
@@ -75,25 +72,31 @@ function Projects(props) {
         onExited={() => setAnimating(false)}
       >
         <Badge target="_blank" href={item.srcUrl} color="bg-dark">
-          <img
-            src={item.src}
-            alt={item.altText}
-            width={item.width}
-            height={item.height}
-          />
+          <iframe src={item.srcUrl} alt={item.caption} title={item.caption}>
+            <p>
+              <a href={item.srcUrl}>
+                <i>iframes</i>.
+              </a>
+            </p>
+          </iframe>
         </Badge>
-        <CarouselCaption
-          captionText={item.text}
-          captionHeader={item.caption}
-          color="light"
-        />
+        <a href={item.srcUrl} target="_blank" rel="noopener noreferrer">
+          <CarouselCaption
+            captionText={item.text}
+            captionHeader={item.caption}
+            color="light"
+          />
+        </a>
       </CarouselItem>
     );
   });
 
   return (
     <div className="custom-tag">
-      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+      <Carousel
+        activeIndex={activeIndex}
+        // next={next} previous={previous}
+      >
         <CarouselIndicators
           items={items}
           activeIndex={activeIndex}
