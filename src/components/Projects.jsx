@@ -8,26 +8,39 @@ import {
   Badge,
 } from "reactstrap";
 import "./Projects.css";
-import hackaton from "./Img/Hackaton_29_03.jpg";
+import computer from "./Img/Computer.png";
+import mobile from "./Img/mobilePhone.png";
 
 const items = [
   {
     id: 1,
     altText: "Hackaton du 29_03_2020",
     caption: "Hackaton 29_03_2020",
-    src: hackaton,
+    src: computer,
+    text: "Hackaton sur le theme: Voyage depuis ton capané ",
+    srcUrl: "https://hackaton1-29-03-2020.netlify.app/",
+    width: "85%",
+    height: "90%",
   },
   {
     id: 2,
-    altText: "Slide 2",
-    caption: "Slide 2",
-    src: "",
+    altText: "Projet 2 : Virus Clicker",
+    caption: "Projet 2 : Virus Clicker",
+    src: mobile,
+    text: "",
+    srcUrl: "https://virus-clicker-p2-wcs.netlify.app/",
+    width: "25%",
+    height: "100%",
   },
   {
     id: 3,
     altText: "Slide 3",
     caption: "Slide 3",
-    src: "",
+    src: computer,
+    text: "",
+    srcUrl: "https://wildbook-p1-wcs.netlify.app/",
+    width: "85%",
+    height: "90%",
   },
 ];
 
@@ -61,18 +74,18 @@ function Projects(props) {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
       >
-        <Badge href="https://hackaton1-29-03-2020.netlify.app/" color="bg-dark">
+        <Badge target="_blank" href={item.srcUrl} color="bg-dark">
           <img
             src={item.src}
             alt={item.altText}
-            width="1200px"
-            height="600px"
+            width={item.width}
+            height={item.height}
           />
         </Badge>
         <CarouselCaption
-          className="text-info"
-          captionText={item.caption}
+          captionText={item.text}
           captionHeader={item.caption}
+          color="light"
         />
       </CarouselItem>
     );

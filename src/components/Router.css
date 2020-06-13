@@ -1,0 +1,30 @@
+a {
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 1vw;
+}
+a :hover {
+  color: #cc9ca5 !important;
+  text-decoration: none !important;
+}
+.homeButton a {
+    position: absolute;
+    margin: 1.5vw;
+    margin-left: 3vw;
+    margin-top: 1.5vw;
+    font-family: 'Megrim', cursive;
+    font-size: 1.7vw;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navBar a {
+    margin-top: 1.5vw;
+    margin-left: 0.2vw;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.4vw;
+}
