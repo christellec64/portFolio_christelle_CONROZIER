@@ -24,8 +24,8 @@ class Router extends React.Component {
         <Menu pointing secondary>
           <Link to="/" className="homeButton">
             <Menu.Item
-              name="Christelle.C"
-              active={activeItem === "Christelle.C"}
+              name="ChristelleC"
+              active={activeItem === "ChristelleC"}
               onClick={this.handleItemClick}
             />
           </Link>{" "}

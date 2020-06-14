@@ -1,0 +1,72 @@
+.home {
+  color: white;
+  text-align: center;
+  margin: 0;
+  animation: appearTitle 1.5s;
+  font-family: 'Abel', sans-serif;
+}
+.home p {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 1vw double #bf838f;
+  border-width: 0.6vw 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 14vh;
+  width: 60vw;
+  height: 58vh;
+  margin: 0 0 0 -29%;
+  font-size: 1.5vw;
+}
+.home p span {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 8vw;
+  letter-spacing: 50;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background: url(https://cdn.pixabay.com/photo/2017/03/25/17/56/color-2174052_960_720.png)
+    repeat-y;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: homeTitle 25s linear infinite;
+  -webkit-animation: homeTitle 25s linear infinite;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+@keyframes homeTitle {
+  0% {
+    background-position: -100% -50%;
+  }
+  100% {
+    background-position: 100% 70%;
+  }
+  0% {
+    background-position: -100% -50%;
+  }
+}
+@-webkit-keyframes homeTitle {
+  0% {
+    background-position: -50% -50%;
+  }
+  100% {
+    background-position: 100% 70%;
+  }
+  0% {
+    background-position: -50% 80%;
+  }
+}
+@keyframes appearTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

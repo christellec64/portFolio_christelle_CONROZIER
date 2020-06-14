@@ -1,10 +1,16 @@
 import React from "react";
+import "./Home.css";
+import { Col } from "reactstrap";
 
 function Home() {
   return (
-    <>
-      <h1>PortFolio</h1>
-    </>
+    <Col className="home" md="12">
+      <p>
+        Christelle CONROZIER
+        <span>PortFolio</span>
+        Developpeur Web & Mobile
+      </p>
+    </Col>
   );
 }
 
