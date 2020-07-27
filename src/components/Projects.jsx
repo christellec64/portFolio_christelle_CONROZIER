@@ -39,6 +39,14 @@ const items = [
     text: "Projet personnel : mon CV version SiteWeb",
     srcUrl: "https://christelle-conrozier-cv.netlify.app/",
   },
+  {
+    id: 5,
+    altText: "Checkpoint final : Wild Circus",
+    caption: "Checkpoint final : Wild Circus",
+    text:
+      "Checkpoint final : refaire le projet WildCircus avec les compétences aquises durant la formation",
+    srcUrl: "https://wild-circus-v2.netlify.app",
+  },
 ];
 
 function Projects(props) {
