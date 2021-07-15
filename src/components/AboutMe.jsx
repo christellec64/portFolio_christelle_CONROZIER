@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import "./AboutMe.css";
+import './AboutMe.css'
 import {
   Col,
   Row,
@@ -10,18 +10,18 @@ import {
   CardBody,
   CardSubtitle,
   CardLink,
-} from "reactstrap";
+} from 'reactstrap'
 
-import mePic from "./Img/moi_carre.png";
-import fb from "./Img/fb_icon_325x325.png";
-import github from "./Img/1200px-Octicons-mark-github.svg.png";
-import linkedin from "./Img/Logo-LinkedIn.png";
+import mePic from './Img/moi_carre.png'
+import fb from './Img/fb_icon_325x325.png'
+import github from './Img/1200px-Octicons-mark-github.svg.png'
+import linkedin from './Img/Logo-LinkedIn.png'
 
 function AboutMe(props) {
   return (
     <>
       <Row>
-        <h1>A Propos</h1>{" "}
+        <h1>A Propos</h1>{' '}
       </Row>
       <Row>
         <Col sm="3" />
@@ -33,20 +33,29 @@ function AboutMe(props) {
             <div className="cardBody">
               <CardBody>
                 <CardTitle>Christelle CONROZIER</CardTitle>
-                <CardSubtitle>
-                  Développeur Web & Mobile dans le secteur touristique
-                </CardSubtitle>
+                <CardSubtitle>Game Developper C# / Unity</CardSubtitle>
               </CardBody>
               <CardBody>
                 <CardText>
-                  Actuellement en formation de développeur Web & Mobile à la
-                  Wild Code School et titulaire d’un BTS Tourisme, je suis à la
-                  recherche d’un stage en communication digitale dans le secteur
-                  touristique ou en agence de communication. <br />
-                  <br />
-                  Tout au long de mes expériences, j’ai pu développer des
-                  compétences dont le sens du contact, l’autonomie,
-                  l’organisation, la gestion de projet et le développement web.
+                  <p>
+                    Venant de terminer ma formation de développeur de jeux vidéo
+                    à la 3W Academy, j&apos;ai obtenu ma certification Unity fin
+                    Juillet 2021 .
+                  </p>
+                  <p>
+                    Je suis actuellement à la recherche d&apos;un poste en tant
+                    que game developper dans une entreprise de jeux vidéo.
+                  </p>
+                  <p>
+                    Tout au long de mes expériences, j’ai pu développer des
+                    compétences dont le sens du contact, l’autonomie,
+                    l’organisation, la gestion de projet et le développement
+                    web.
+                  </p>
+                  <em>
+                    Pour en savoir plus sur mes différents projets, je vous
+                    invite à les découvrir dans l'onglet "Projets".
+                  </em>
                 </CardText>
                 <div className="mail">
                   <a href="mailto:christelle.conrozier@orange.fr">
@@ -96,6 +105,6 @@ function AboutMe(props) {
         <Col sm="3" />
       </Row>
     </>
-  );
+  )
 }
-export default AboutMe;
+export default AboutMe
