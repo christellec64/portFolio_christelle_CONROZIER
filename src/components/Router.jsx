@@ -2,7 +2,9 @@ import React from 'react'
 import {BrowserRouter, Switch, Route, Link} from 'react-router-dom'
 import {Menu} from 'semantic-ui-react'
 
-import Projects from './Projects'
+import ProjectsMenu from './ProjectsMenu'
+import ProjectsWeb from './ProjectsWeb'
+import ProjectsGame from './ProjectsGame'
 import AboutMe from './AboutMe'
 import Home from './Home'
 import Resume from './Resume'
@@ -31,7 +33,7 @@ class Router extends React.Component {
             />
           </Link>{' '}
           <div className="navBar">
-            <Link to="/projects">
+            <Link to="/projectsMenu">
               <Menu.Item
                 name="Projets"
                 active={activeItem === 'Projets'}
@@ -58,7 +60,9 @@ class Router extends React.Component {
         <Switch>
           <Route path="/aboutMe" component={AboutMe} />
           <Route path="/resume" component={Resume} />
-          <Route path="/projects" component={Projects} />
+          <Route path="/projectsMenu" component={ProjectsMenu} />
+          <Route path="/projectsWeb" component={ProjectsWeb} />
+          <Route path="/projectsGame" component={ProjectsGame} />
           <Route exact path="/" component={Home} />
         </Switch>
       </BrowserRouter>

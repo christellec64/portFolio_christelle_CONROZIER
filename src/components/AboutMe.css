@@ -1,18 +1,11 @@
-h1 {
-  font-family: "Abel", sans-serif;
-  text-align: center;
-  color: white !important;
-  margin-left: 4vw !important;
-  font-size: 2vw !important;
-}
 .card {
-  border: 0.2vw solid #bf838f !important;
+  border: 0.5vw solid #bf838f !important;
   border-radius: 5% 10% !important;
-  width: 95%;
-  height: 55vh;
+  width: 100%;
+  height: 60vh;
   display: flex;
   flex-direction: row !important;
-  margin-top: 7vh;
+  margin-top: 6vh;
 }
 .cardImageProfil {
   margin-top: 1.5vw;

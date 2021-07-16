@@ -20,12 +20,9 @@ import linkedin from './Img/Logo-LinkedIn.png'
 function AboutMe(props) {
   return (
     <>
+      <h1>A Propos</h1>
       <Row>
-        <h1>A Propos</h1>{' '}
-      </Row>
-      <Row>
-        <Col sm="3" />
-        <Col sm="6">
+        <Col sm={{size:"6", offset: "3"}}>
           <Card className="card mx-auto">
             <div className="cardImageProfil">
               <img width="90%" src={mePic} alt="Christelle CONROZIER" />
