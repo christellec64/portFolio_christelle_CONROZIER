@@ -17,7 +17,7 @@ function ProjectsGame(props) {
       <Row className="rowProjects">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Raccoon Galaxy</h4>
-          <iframe src="" frameborder="0" />
+          <iframe title="Raccoon Galaxy" src="" frameborder="0" />
         </Col>
         <Col xs={{size: '3', offset: '1'}}>
           <p>{/* TEXT */}</p>
@@ -28,7 +28,7 @@ function ProjectsGame(props) {
       <Row className="rowProjects">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Auditorium</h4>
-          <iframe src="" frameborder="0" />
+          <iframe title="Auditorium" src="" frameborder="0" />
         </Col>
         <Col xs={{size: '3', offset: '1'}}>
           <p>{/* TEXT */}</p>
@@ -39,7 +39,7 @@ function ProjectsGame(props) {
       <Row className="rowProjects">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Beat'em Up</h4>
-          <iframe src="" frameborder="0" />
+          <iframe title="Beat em Up" src="" frameborder="0" />
         </Col>
         <Col xs={{size: '3', offset: '1'}}>
           <p>{/* TEXT */}</p>
