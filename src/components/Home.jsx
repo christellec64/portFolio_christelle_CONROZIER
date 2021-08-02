@@ -1,6 +1,6 @@
-import React from "react";
-import "./Home.css";
-import { Col } from "reactstrap";
+import React from 'react'
+import './Home.css'
+import {Col} from 'reactstrap'
 
 function Home() {
   return (
@@ -8,10 +8,10 @@ function Home() {
       <p>
         Christelle CONROZIER
         <span>PortFolio</span>
-        Developpeur Web & Mobile
+        Developpeur de jeux vidéo & Web/Mobile
       </p>
     </Col>
-  );
+  )
 }
 
-export default Home;
+export default Home

@@ -1,3 +1,15 @@
+.webLink {
+  color: #cc9ca5 !important;
+  text-decoration: none !important;
+  font-size: 1vw;
+}
+.webLink :hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+h4:hover {
+  color: white !important;
+}
 .returnButtonDiv {
   display: flex;
   justify-content: right;
@@ -26,7 +38,6 @@
   align-items: center;
   margin-top: 40vh;
 }
-
 .projectChoiceLink {
   display: flex;
   justify-content: center;
@@ -52,10 +63,14 @@ iframe {
   height: 100%;
 }
 .rowProjects {
-  height: 50vh;
+  min-height: 50vh;
   margin-bottom: 100px;
   margin-top: 50px;
   color: white;
   font-family: 'BlinkMacSystemFont';
   font-size: 18px;
+}
+
+.secondCol {
+  padding-top: 3vh;
 }

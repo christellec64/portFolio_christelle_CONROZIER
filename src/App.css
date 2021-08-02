@@ -9,6 +9,21 @@ h1 {
   margin-left: 4vw !important;
   font-size: 2vw !important;
 }
+
+h4,
+h5 {
+  color: #bf838f;
+}
+a {
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 1vw;
+}
+a :hover {
+  color: #cc9ca5 !important;
+  text-decoration: none !important;
+}
+
 .row {
   margin: 0;
 }
