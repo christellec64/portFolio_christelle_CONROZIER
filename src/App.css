@@ -17,7 +17,6 @@ h5 {
 a {
   color: white !important;
   text-decoration: none !important;
-  font-size: 1vw;
 }
 a :hover {
   color: #cc9ca5 !important;
@@ -36,8 +35,7 @@ body {
   height: 100%;
   width: 100%;
   user-select: none;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: -apple-system, 'Abel', sans-serif;
   position: fixed;
   overflow: hidden;
   background-color: #343a40;

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Col, Container, Row} from 'reactstrap'
-import './Projects.css'
+import './ProjectsWeb.css'
 import {Link} from 'react-router-dom'
 
 function ProjectsWeb(props) {
@@ -14,8 +14,8 @@ function ProjectsWeb(props) {
       <h1> Mes projets Web & Mobile</h1>
 
       {/* IcKasso */}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -27,7 +27,7 @@ function ProjectsWeb(props) {
           </h4>
           <iframe title="ickasso" src="https://ickasso.com" frameborder="0" />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
@@ -78,8 +78,8 @@ function ProjectsWeb(props) {
       </Row>
 
       {/* Plateforme Networking Crea*/}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -95,7 +95,7 @@ function ProjectsWeb(props) {
             frameborder="0"
           />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
@@ -144,8 +144,8 @@ function ProjectsWeb(props) {
       </Row>
 
       {/* WildCircus*/}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -161,7 +161,7 @@ function ProjectsWeb(props) {
             frameborder="0"
           />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
@@ -206,8 +206,8 @@ function ProjectsWeb(props) {
       </Row>
 
       {/* Virus Clicker */}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -223,7 +223,7 @@ function ProjectsWeb(props) {
             frameborder="0"
           />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
@@ -268,8 +268,8 @@ function ProjectsWeb(props) {
       </Row>
 
       {/* Hackaton Voyage depuis ton canapé */}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -285,7 +285,7 @@ function ProjectsWeb(props) {
             frameborder="0"
           />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
@@ -328,8 +328,8 @@ function ProjectsWeb(props) {
       </Row>
 
       {/* WildBook */}
-      <Row className="rowProjects">
-        <Col xs={{size: '7', offset: '1'}}>
+      <Row className="rowProjectsWeb">
+        <Col className="colMargin" xs={{size: '7', offset: '0'}}>
           <h4>
             <a
               target="_blank"
@@ -345,7 +345,7 @@ function ProjectsWeb(props) {
             frameborder="0"
           />
         </Col>
-        <Col className="secondCol" xs={{size: '3', offset: '0'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
