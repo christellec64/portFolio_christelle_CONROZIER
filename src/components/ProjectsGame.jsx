@@ -3,6 +3,10 @@ import {Col, Container, Row} from 'reactstrap'
 import './ProjectsGame.css'
 import {Link} from 'react-router-dom'
 
+import raccoonGalaxy from './Img/gamingimg/RaccoonGalaxy.png'
+import auditorium from './Img/gamingimg/auditorium.png'
+import beatemup from './Img/gamingimg/beatemup.png'
+
 function ProjectsGame(props) {
   return (
     <Container fluid id="topGame">
@@ -17,44 +21,49 @@ function ProjectsGame(props) {
       <Row className="rowProjectsGame">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Raccoon Galaxy</h4>
-          <iframe
-            title="Raccoon Galaxy"
-            src="https://i.simmer.io/@MxKitty/roccoon-galaxy"
-          ></iframe>
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://i.simmer.io/@MxKitty/roccoon-galaxy"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={raccoonGalaxy}
+              alt="Raccoon Galaxy"
+            />
+          </a>
         </Col>
-        <Col xs={{size: '3', offset: '1'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
           <p>
-            Ce projet a été réalisé en attendant de trouver un stage pour
-            valider ma formation à la WildCodeSchool, pour ma mère : Isabelle
-            Conrozier Kassovic.
-          </p>
-          <p>
-            IcKasso vient du I de Isabelle, du c de Conrozier et Kasso de
-            Kassovic. Ma mère a lancé sa micro-entreprise en 2002 afin de vendre
-            ses oeuvres. C'est à son domicile qu'elle réalise ses oeuvres
-            uniques : des sculptures, généralement en terre cuite, des peintures
-            et autres créations en terre cuite.
+            Ce projet a été réalisé dans le cadre de ma formation à la 3w
+            Academy. Afin d'évaluer les compétences acquises durant la
+            formation, nous devions réaliser un projet en autonomie durant 2
+            semaines.
           </p>
           <h5>
-            <b>Objectif</b>
+            <b>Concept</b>
+          </h5>
+          <p>Jeu d’action, remake d’un bomberMan en 2D, solo player.</p>
+          <h5>
+            <b>Synopsis</b>
           </h5>
           <p>
-            Le projet consiste à réaliser un site vitrine pour ma mère avec la
-            possibilité de l'alimenter via une interface dédier.
+            "Racoonius, une planète peuplée par des ratons-laveurs, s'est fait
+            dérober son gland sacré qui protège leur planète. Le joueur
+            incarnera le héros qui tentera d’empêcher le roi des forces du mal,
+            Foxiar et ses sbires, de voler les glands sacrés des autres
+            planètes."
           </p>
           <h5>
             <b>Compétences</b>
           </h5>
           <ul>
             <li>Travail en autonomie</li>
-            <li>
-              Technologies utilisées : JS, CSS, React, BootStrap/ReactStrap,
-              MySQL, Express JS
-            </li>
-            <li>Outils utilisés : PhotoShop, Github</li>
+            <li>Développement : Unity, C#</li>
           </ul>
           <br />
           <br />
@@ -71,49 +80,52 @@ function ProjectsGame(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* Auditorium */}
       <Row className="rowProjectsGame">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Auditorium</h4>
-          <iframe
-            title="Auditorium"
-            src="https://i.simmer.io/@MxKitty/auditorium-remake"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://i.simmer.io/@MxKitty/auditorium-remake"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={auditorium}
+              alt="Auditorium"
+            />
+          </a>
         </Col>
-        <Col xs={{size: '3', offset: '1'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
           <p>
-            Ce projet a été réalisé en attendant de trouver un stage pour
-            valider ma formation à la WildCodeSchool, pour ma mère : Isabelle
-            Conrozier Kassovic.
-          </p>
-          <p>
-            IcKasso vient du I de Isabelle, du c de Conrozier et Kasso de
-            Kassovic. Ma mère a lancé sa micro-entreprise en 2002 afin de vendre
-            ses oeuvres. C'est à son domicile qu'elle réalise ses oeuvres
-            uniques : des sculptures, généralement en terre cuite, des peintures
-            et autres créations en terre cuite.
+            Ce projet a été réalisé durant la formation à la 3w Academy afin
+            d&apos;apprendre à utiliser la gestion du son et la 2D dans Unity.
           </p>
           <h5>
             <b>Objectif</b>
           </h5>
           <p>
-            Le projet consiste à réaliser un site vitrine pour ma mère avec la
-            possibilité de l'alimenter via une interface dédier.
+            Recréer quelques niveaux du jeu Auditorium créé par le studio Cipher
+            Prime en 2009, voici la version jouable en ligne{' '}
+            <a
+              className="webLink"
+              href=" https://cipherprime.com/games/auditorium/"
+            >
+              https://cipherprime.com/games/auditorium/
+            </a>
+            .
           </p>
           <h5>
             <b>Compétences</b>
           </h5>
           <ul>
-            <li>Travail en autonomie</li>
-            <li>
-              Technologies utilisées : JS, CSS, React, BootStrap/ReactStrap,
-              MySQL, Express JS
-            </li>
-            <li>Outils utilisés : PhotoShop, Github</li>
+            <li>Développement : Unity, C#</li>
           </ul>
           <br />
           <br />
@@ -123,56 +135,54 @@ function ProjectsGame(props) {
               target="_blank"
               className="webLink"
               rel="noopener noreferrer"
-              href="https://i.simmer.io/@MxKitty/roccoon-galaxy"
+              href="https://i.simmer.io/@MxKitty/auditorium-remake"
             >
-              {''} <b>Raccoon Galaxy</b>
+              {''} <b>Auditorium Remake</b>
             </a>
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* Beat'em Up */}
       <Row className="rowProjectsGame">
         <Col xs={{size: '6', offset: '1'}}>
           <h4>Beat'em Up</h4>
-          <iframe
-            title="Beat em Uprt"
-            src="https://i.simmer.io/@MxKitty/beat-em-up"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://i.simmer.io/@MxKitty/beat-em-up"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={beatemup}
+              alt="Beat'em Up"
+            />
+          </a>
         </Col>
-        <Col xs={{size: '3', offset: '1'}}>
+        <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
             <b>Contexte</b>
           </h5>
           <p>
-            Ce projet a été réalisé en attendant de trouver un stage pour
-            valider ma formation à la WildCodeSchool, pour ma mère : Isabelle
-            Conrozier Kassovic.
-          </p>
-          <p>
-            IcKasso vient du I de Isabelle, du c de Conrozier et Kasso de
-            Kassovic. Ma mère a lancé sa micro-entreprise en 2002 afin de vendre
-            ses oeuvres. C'est à son domicile qu'elle réalise ses oeuvres
-            uniques : des sculptures, généralement en terre cuite, des peintures
-            et autres créations en terre cuite.
+            Ce projet a été réalisé en groupe de 4 étudiants, durant la
+            formation à la 3w Academy afin d&apos;apprendre à utiliser un outil
+            de gestion de version : Unity Collaborate.
           </p>
           <h5>
             <b>Objectif</b>
           </h5>
           <p>
-            Le projet consiste à réaliser un site vitrine pour ma mère avec la
-            possibilité de l'alimenter via une interface dédier.
+            Recréer partiellement le jeu flash promotionnel Incubattle, créé en
+            2011 par Paul Veer, Noel Berry et Infinite Ammo. Vous serez
+            également en groupes de deux et utiliserez Unity Collab.
           </p>
           <h5>
             <b>Compétences</b>
           </h5>
           <ul>
-            <li>Travail en autonomie</li>
-            <li>
-              Technologies utilisées : JS, CSS, React, BootStrap/ReactStrap,
-              MySQL, Express JS
-            </li>
-            <li>Outils utilisés : PhotoShop, Github</li>
+            <li>Développement : Unity, C#</li>
           </ul>
           <br />
           <br />
@@ -182,13 +192,14 @@ function ProjectsGame(props) {
               target="_blank"
               className="webLink"
               rel="noopener noreferrer"
-              href="https://i.simmer.io/@MxKitty/roccoon-galaxy"
+              href="https://i.simmer.io/@MxKitty/beat-em-up"
             >
-              {''} <b>Raccoon Galaxy</b>
+              {''} <b>Beat&apos;em Up</b>
             </a>
           </p>
         </Col>
       </Row>
+      <hr />
 
       <div className="returnButtonDiv">
         <a className="returnButton" href="#topGame">
