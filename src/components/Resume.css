@@ -7,7 +7,6 @@
 
 .iframeResume {
   margin: 0;
-  padding-bottom: 10vh;
-  width: 88%;
-  height: 100vh;
+  width: 100%;
+  height: 90vh;
 }
