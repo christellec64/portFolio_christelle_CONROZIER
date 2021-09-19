@@ -23,6 +23,16 @@ a :hover {
   text-decoration: none !important;
 }
 
+hr {
+  margin-top: 10vh !important;
+  margin-bottom: 5vh !important;
+  width: 50%;
+  border-width: 50%;
+  color: #bf838f;
+  background-color: #bf838f;
+  height: 5px !important;
+}
+
 .row {
   margin: 0;
 }

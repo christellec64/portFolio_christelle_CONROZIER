@@ -3,6 +3,13 @@ import {Col, Container, Row} from 'reactstrap'
 import './ProjectsWeb.css'
 import {Link} from 'react-router-dom'
 
+import ickasso from './Img/webimg/Ickasso.png'
+import crea from './Img/webimg/CREA.png'
+import wildcircus from './Img/webimg/WildCircus.png'
+import virusclicker from './Img/webimg/VirusClicker.png'
+import hackaton3 from './Img/webimg/VoyageDepuisTonCanape.png'
+import wildbook from './Img/webimg/WildBook.png'
+
 function ProjectsWeb(props) {
   return (
     <Container fluid id="topWeb">
@@ -12,6 +19,7 @@ function ProjectsWeb(props) {
         </Link>
       </div>
       <h1> Mes projets Web & Mobile</h1>
+      <hr />
 
       {/* IcKasso */}
       <Row className="rowProjectsWeb">
@@ -25,7 +33,14 @@ function ProjectsWeb(props) {
               IcKasso
             </a>
           </h4>
-          <iframe title="ickasso" src="https://ickasso.com" frameborder="0" />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ickasso.com"
+          >
+            <img className="projectImgHorizontal" src={ickasso} alt="ickasso" />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -76,6 +91,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* Plateforme Networking Crea*/}
       <Row className="rowProjectsWeb">
@@ -89,11 +105,18 @@ function ProjectsWeb(props) {
               Plateforme Networking de l'association CREA Aquitaine
             </a>
           </h4>
-          <iframe
-            title="CREA"
-            src="https://networking.crea-aquitaine.org"
-            frameborder="0"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://networking.crea-aquitaine.org"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={crea}
+              alt="networking crea"
+            />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -142,6 +165,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* WildCircus*/}
       <Row className="rowProjectsWeb">
@@ -155,11 +179,18 @@ function ProjectsWeb(props) {
               WildCircus
             </a>
           </h4>
-          <iframe
-            title="WildCircus"
-            src="https://wild-circus-v2.netlify.app"
-            frameborder="0"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wild-circus-v2.netlify.app"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={wildcircus}
+              alt="wildcircus"
+            />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -204,6 +235,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* Virus Clicker */}
       <Row className="rowProjectsWeb">
@@ -217,11 +249,18 @@ function ProjectsWeb(props) {
               Virus Clicker
             </a>
           </h4>
-          <iframe
-            title="Virus Clicker"
-            src="https://virus-clicker-p2-wcs.netlify.app/"
-            frameborder="0"
-          />
+          <a
+            className="projectLinkVerticalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://virus-clicker-p2-wcs.netlify.app/"
+          >
+            <img
+              className="projectImgVertical"
+              src={virusclicker}
+              alt="virusclicker"
+            />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -266,6 +305,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* Hackaton Voyage depuis ton canapé */}
       <Row className="rowProjectsWeb">
@@ -279,11 +319,18 @@ function ProjectsWeb(props) {
               Hackaton du 29 mars 2020 : Voyage depuis ton canapé.
             </a>
           </h4>
-          <iframe
-            title="Hackaton 29-03-2020"
-            src="https://hackaton1-29-03-2020.netlify.app/"
-            frameborder="0"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://hackaton1-29-03-2020.netlify.app/"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={hackaton3}
+              alt="Hackaton du 29 mars 2020 : Voyage depuis ton canapé"
+            />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -326,6 +373,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       {/* WildBook */}
       <Row className="rowProjectsWeb">
@@ -339,11 +387,18 @@ function ProjectsWeb(props) {
               Le WildBook
             </a>
           </h4>
-          <iframe
-            title="Wildbook"
-            src="https://wildbook-p1-wcs.netlify.app/"
-            frameborder="0"
-          />
+          <a
+            className="projectLinkHorizontalImg"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://wildbook-p1-wcs.netlify.app/"
+          >
+            <img
+              className="projectImgHorizontal"
+              src={wildbook}
+              alt="WildBook"
+            />
+          </a>
         </Col>
         <Col className="secondCol" xs={{size: '3', offset: '1'}}>
           <h5>
@@ -384,6 +439,7 @@ function ProjectsWeb(props) {
           </p>
         </Col>
       </Row>
+      <hr />
 
       <div className="returnButtonDiv">
         <a className="returnButton" href="#topWeb">
